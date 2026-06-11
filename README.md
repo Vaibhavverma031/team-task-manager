@@ -28,6 +28,11 @@ A Full Stack Team Task Manager application built using React, Node.js, Express.j
 ### Authentication
 - JWT
 
+Deployment - Frontend deployed on Railway - Backend deployed on Railway
+
+Live URL - https://team-task-manager-production-4cd6.up.railway.app
+
+
 ## Installation
 
 ### Backend
