@@ -17,7 +17,7 @@ const createProject = async () => {
   try {
 
     const res = await axios.post(
-      "team-task-manager-production-ae22.uappp.railway.",
+      "https://team-task-manager-production-ae22.up.railway.app/api/projects",
       {
         name: projectName,
         description: projectDescription,
