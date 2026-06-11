@@ -17,7 +17,7 @@ const createProject = async () => {
   try {
 
     const res = await axios.post(
-      "http://localhost:5000/api/projects",
+      "team-task-manager-production-ae22.up.railway.app",
       {
         name: projectName,
         description: projectDescription,
@@ -51,7 +51,7 @@ const createTask = async () => {
   dueDate,
 });
     const res = await axios.post(
-      "http://localhost:5000/api/tasks",
+      "team-task-manager-production-ae22.up.railway.app",
       {
         title: taskTitle,
         description: taskDescription,
@@ -82,7 +82,7 @@ const getTasks = async () => {
   try {
     
     const res = await axios.get(
-      "http://localhost:5000/api/tasks",
+      "team-task-manager-production-ae22.up.railway.app",
       {
         headers: {
           Authorization: token,
@@ -98,7 +98,7 @@ const getTasks = async () => {
 const getProjects = async () => {
   try {
     const res = await axios.get(
-      "http://localhost:5000/api/projects",
+      "team-task-manager-production-ae22.up.railway.app",
       {
         headers: {
           Authorization: token,
@@ -114,7 +114,7 @@ const getProjects = async () => {
 const getUsers = async () => {
   try {
     const res = await axios.get(
-      "http://localhost:5000/api/users",
+      "team-task-manager-production-ae22.up.railway.app",
       {
         headers: {
           Authorization: token,
@@ -131,7 +131,7 @@ const updateTaskStatus = async (id) => {
   console.log("Button clicked", id);
   try {
     await axios.put(
-      `http://localhost:5000/api/tasks/${id}`,
+      `team-task-manager-production-ae22.up.railway.app/api/tasks/${id}`,
       {
         status: "Completed",
       },
